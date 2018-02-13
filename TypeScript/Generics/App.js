@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Dao_1 = require("./Database/Dao");
+var PessoaModel_1 = require("./Model/PessoaModel");
+var pessoaModel = new PessoaModel_1.PessoaModel("Harlan", "harlancleiton@gmail.com");
+var dao = new Dao_1.Dao();
+dao.insert(pessoaModel);
+dao.delete(1);
+dao.update(pessoaModel);
+dao.select(1);
